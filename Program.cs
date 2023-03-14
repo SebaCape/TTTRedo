@@ -24,20 +24,20 @@ namespace TicTacToe
       Console.WriteLine("1 for singleplayer, 2 for multiplayer");
       string gameChoice = Console.ReadLine();
 
-      void boardPrint()
+       void boardPrint()
       {
       Console.WriteLine(ticTacToe[0] + ticTacToe[1] + ticTacToe[2]);
       Console.WriteLine(ticTacToe[3] + ticTacToe[4] + ticTacToe[5]);
       Console.WriteLine(ticTacToe[6] + ticTacToe[7] + ticTacToe[8]);
       }
       //goes to whichever game was chosen
+      boardPrint();
       if (gameChoice == "1")
       goto singlePlayer;
       else if (gameChoice == "2")
       goto multiPlayer;
       else
       goto gameChoose;
-      boardPrint();
       //Definition of Win checking method
         void WinCheck()
         {
